@@ -1,12 +1,12 @@
-const express = require('express');
-const connector = require('./connector');
+const express = require("express");
+const connector = require("./connector.js");
 const server = express();
 const port = 3000;
 server.use(express.json());
 
-server.post('/', (req, res) => {
+server.post("/", (req, res) => {
   if (accessTokenIsValid(req)) {
-    connector.handleHttpCallback(req, res)
+    connector.handleHttpCallback(req, res);
   }
 });
 
@@ -15,7 +15,7 @@ function accessTokenIsValid(req) {
   if (req.body.authentication.token) {
     return true;
   }
-  res.status(401).send('Unauthorized')
+  res.status(401).send("Unauthorized");
   return false;
 }
 
