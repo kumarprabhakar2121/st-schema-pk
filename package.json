@@ -1,0 +1,25 @@
+{
+  "name": "st-schema-pk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "connector.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kumarprabhakar2121/st-schema-pk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kumarprabhakar2121/st-schema-pk/issues"
+  },
+  "homepage": "https://github.com/kumarprabhakar2121/st-schema-pk#readme",
+  "dependencies": {
+    "st-schema": "^1.5.1",
+    "uuid": "^9.0.1"
+  }
+}
